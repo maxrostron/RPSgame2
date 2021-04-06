@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+  <div id="startcontainer">
+        <h1 id="welcomemessage"> Hello! Are you ready to take on the world champion of Rock, Paper, Scissors? </h1>
+        <div>
+            <button class="button" id="proceed">Yeah let's do this!</button>
+            <button class="button" id="close">I'm not ready for this...</button>
+        </div>
+    </div>
+
+
+    <div id="roundscontainer">
+        <h1>Before we start... </h1>
+        <h2>How many rounds shall we play?</h2>
+        <div>
+            <input type="number" id="rounds">
+            <button class="button" id="roundSubmit">Start!</button>
+        </div>
+    </div>
+
+
+    <div id="gamecontainer">
+        <h1>Let's Play! </h1>
+        <h2>Please select your choice...</h2>
+
+        <div id="gamezone">
+
+            <div class="playdiv" id="playerdiv">
+                <div class="headings">
+                    <h3>Player:</h3>
+                    <h3 class="score" id="playerscoredisplay">0</h3>
+                </div>
+                
+                <div id="options">
+                    <div class="container">
+                        <img src="/images/paper-roll.svg" alt="paper" class="selection" id="playerpaper">
+                        <div class="square" id="pp"></div>
+                    </div>
+
+                    <div class="container">
+                        <img src="/images/rock.svg" alt="rock" class="selection"  id="playerrock">
+                        <div class="square" id="pr"></div>
+                    </div>
+
+                    <div class="container" >
+                        <img src="/images/scissors.svg" alt="scissors"  class="selection" id="playerscissors">
+                        <div class="square" id="ps"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="playdiv" id="computerdiv">
+                <div class="headings">
+                    <h3>Computer:</h3>
+                    <h3 class="score" id="computerscoredisplay">0</h3>
+                </div>
+                <div id="options">
+                    <div class="container" >
+                        <img src="/images/paper-roll.svg" alt="paper" class="selection" id="computerpaper">
+                        <div class="square" id="cp"></div>
+                    </div>
+
+                    <div class="container" >
+                        <img src="/images/rock.svg" alt="rock" class="selection" id="computerrock">
+                        <div class="square" id="cr"></div>
+                    </div>
+
+                    <div class="container" >
+                        <img src="/images/scissors.svg" alt="scissors"  class="selection" id="computerscissors">
+                        <div class="square" id="cs"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="control">
+            <h3 id="roundoutcome"></h3>
+            <h4 id="roundsremaining"></h4>
+            <button class="button" id="reset" onClick="refreshPage()">Reset Game</button>
+        </div>        
+    </div>
+
+    <div id="endcontainer">
+        <h1>Game Over!</h1>
+        <h2 id="gameoutcome"></h2>
+        <h2 id="finalscore"></h2>
+        <button class="button" id="reset" onClick="refreshPage()">Play Again?</button>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

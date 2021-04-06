@@ -1,0 +1,266 @@
+html {
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-image: url(/images/pawel-czerwinski-1k9lY4WWXJ0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#startcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 85%;
+}
+
+    #startcontainer > h1 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        font-size: 35px;
+        max-width: 75%;
+    }
+
+    #startcontainer > div {
+        margin-left: 20%;
+        margin-right: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        max-width: 45%;
+        max-height: 100%;
+        border-radius: 25px;
+        background-color: rgba(241, 239, 234, 0.75);
+        box-shadow: 4px -2px 2px 1px rgba(225, 194, 199, 0.562);
+    }
+    
+    .button:hover {
+        background-color: rgba(221, 220, 216, 0.822);
+        transform: translate(1%, 1%);
+        cursor: pointer;
+    }
+
+#roundscontainer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 85%;
+
+}
+
+    #roundscontainer > h1 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 35px;
+    }
+
+    #roundscontainer > h2 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 20px;
+    }
+
+    #roundscontainer > div {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 20px;
+    }
+
+    #roundscontainer > div > #rounds {
+        padding: 10px;
+        border-radius: 25px;
+        border: none;
+        width: 40px;
+        text-align:center;
+    }
+
+    #roundscontainer > div > #roundSubmit {
+        width: 80px;
+        text-align: center;
+    }
+
+
+#gamecontainer {
+    display: none;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+    #gamecontainer > h1 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    #gamecontainer > h2 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+       
+    }
+
+    #gamezone {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+       
+    }
+
+        .playdiv {
+            margin-right: 1%;
+            margin-left: 1%;
+            text-align: center;
+           
+        }
+
+        .playdiv > .headings{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+            .headings > h3{
+                margin-right: 10px;
+                margin-bottom: 0px;
+                font-size: 20px;
+            }
+
+        #options{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+            .container {
+                position: relative;
+                margin-right: 45px;
+                margin-top: 15px;
+                width: auto;
+                height: auto;
+                
+            }
+        
+                .selection{
+                    width: 45px;
+                    height: 45px;
+                    position: absolute;
+                    top: 7px;
+                    left: 7px;
+                }
+
+
+                .square {
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgba(255, 255, 255, 0.986);
+                    box-shadow: 4px -2px 2px 1px rgba(225, 194, 199, 0.562);   
+                    border-radius: 10px 10px 10px 10px;
+                            
+                        }
+
+                .selection:hover {
+                    transform: scale(1.3);
+                    cursor: pointer;
+                }
+
+
+            
+        
+        #playerdiv, #computerdiv {
+            padding: 5px 15px 35px 15px;
+            background-color: rgba(244, 226, 198, 0.822);
+            border-radius: 10px 10px 10px 10px;
+        }
+
+    
+     #control {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+        
+        #control > h3 {
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 0%;
+            font-size: 15px;
+        }
+
+        #control > h4 {
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 15px;
+        }
+
+        #control > .button {
+            margin: auto;
+        }
+
+#endcontainer {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    #endcontainer > h1 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    #endcontainer > h2 {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+       
+    }
+
+    #endcontainer > .button {
+        margin: auto;
+    }
